@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Raleway:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("img/bg.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: radial-gradient(rgb(35, 37, 35), black);
+    opacity: 90%;
+    min-width: 90vmin;
+    min-height: 92vmin;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head{
+    background-color: white;
+    }
+
+.snake{
+    background-color:grey;
+}
+
+
+.food{
+    background: url("img/Food.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#score_tile{
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-size: 50px;
+    position: absolute;
+    color: grey;
+    /* font-family: 'Mochiy Pop P One', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
