@@ -48,7 +48,7 @@ function isCollide(s_arr){
 }
 
 function game_engine(){
-    // game_sound.play();
+    game_sound.play();
     // After collision of snake
     if(isCollide(snakeArr)){
         game_sound.pause();
@@ -58,7 +58,7 @@ function game_engine(){
         score = 0;
         score_tile.innerHTML = `Score: ${score} `; 
 
-        // game_sound.play();
+        game_sound.play();
         snakeArr = [{x:13, y: 15}];
         hiscore = localStorage.getItem('hiscore');
         if(score>hiscore){
